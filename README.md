@@ -5,6 +5,7 @@ jQuery.renderJSON is a lightweight JSON-to-HTML visualisation plugin.
 
 It provides a quick way of displaying a piece of JSON data in a user-friendly way.
 
+By Marek -- @marekweb
 
 Usage
 -----
@@ -15,7 +16,7 @@ Include the plugin by adding a `<script>` element to your page, placing it after
 
 Use the plugin on an element that you want to use as a container (where `obj` is your JSON data).
 
-    $("#container").renderJSON(obj)';
+    $("#container").renderJSON(obj);
 
 
 Example output
