@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Json viewer</title>
+		<link rel="stylesheet" href="renderjson.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.renderjson.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				// This is our JSON data
+				var obj = {"menu": {"id": "file","value": "File","popup": {"menuitem": [{"value": "New", "onclick": "CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}};
+
+			
+				// Populate #container with the rendered output
+				$("#container").renderJSON(obj);
+				
+				// Done.
+				
+			});
+		</script>
+	</head>
+	<body>
+	
+		<!-- Empty element used as a container for the rendered output -->
+		<div id="container"></div>
+		
+	</body>
+</html>
